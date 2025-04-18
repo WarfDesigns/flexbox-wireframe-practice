@@ -1,0 +1,26 @@
+body {
+    background-color: grey;
+}
+header {
+    background-color: maroon;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    background-color: rgb(0, 163, 92);
+}
+article {
+    background-color: rgb(255, 0, 98);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+aside {
+    background-color: navy;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+footer {
+    background-color: orange;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
