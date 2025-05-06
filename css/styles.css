@@ -31,7 +31,11 @@ section {
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px; 
-    align-items: stretch;   
+    align-items: stretch;
+    flex: 1;   
+}
+.green {
+    flex: 1;
 }
 .grey {
         background-color: rgb(186, 186, 186);
@@ -42,11 +46,13 @@ section {
         flex-flow: row wrap;
         justify-content: space-evenly;
         row-gap: 10px;;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        padding-right: 10px;
-        padding-left: 10px;  
-        align-items: stretch;  
+        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;  
+        align-items: stretch;
+        flex: 1;
+          
 }
 article {
     background-color: rgb(255, 0, 98);
@@ -58,9 +64,13 @@ article {
     font-size: 18px;
     padding: 10px;
     min-width: 100%;
+    align-items: center;
     
 }
-aside {
+.aside-desktop {
+    display: none;
+}
+.aside-mobile {
     background-color: navy;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -70,8 +80,8 @@ aside {
     justify-content: center;
     display: flex;
     font-size: 25px;
-    align-items: stretch;
-
+    align-items: center;
+    flex: 1;
 }
 footer {
     background-color: rgb(255, 114, 26);
@@ -84,22 +94,26 @@ footer {
     display: flex;
     font-size: 25px;
 }
-@media screen and (min-width: 600px) {
+
+
+@media (min-width: 500px) {
     
     body {
         background-color: rgb(186, 186, 186);
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        row-gap: 10px;
+        gap: 10px;
         justify-content: center;
         padding: 10px;
+        margin: 0;
+        flex: 1;
     }
     header {
         background-color: rgb(110, 0, 66);
         color: white;
         font-family: Arial, Helvetica, sans-serif;
-        row-gap: 10px;
+        gap: 10px;
         border-radius: 7px;
         padding: 10px;
         justify-content: center;
@@ -108,14 +122,13 @@ footer {
     }
     section {
         background-color: rgb(0, 187, 106);
-        row-gap: 10px;
+        gap: 10px;
         border-radius: 7px;
         margin: 0;
         display: flex;
-        flex-flow: row wrap;
         justify-content: space-evenly;
-        padding-bottom: 50px;
-        padding-top: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
         padding-right: 20px;
         padding-left: 20px; 
         align-items: stretch;   
@@ -136,13 +149,27 @@ footer {
             border-radius: 7px;
             margin: 0;
             display: flex;
-            flex-flow: row wrap;
             justify-content: space-evenly;
-            row-gap: 10px;;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            padding-right: 10px;
-            padding-left: 10px; 
+            padding-bottom: 0px;
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-left: 0px; 
             align-items: stretch;   
         }
+        .aside-mobile{
+            display: none;
+        }
+        .aside-desktop {
+            background-color: navy;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 10px;
+            border-radius: 7px;
+            padding: 10px;
+            justify-content: center;
+            display: flex;
+            font-size: 25px;
+            flex: 1;
+            align-items: center;
+        }    
 }
